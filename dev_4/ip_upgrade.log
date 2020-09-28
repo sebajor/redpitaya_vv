@@ -1,0 +1,57 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1.1 (lin64) Build 2580384 Sat Jun 29 08:04:45 MDT 2019
+| Date         : Mon Sep 21 18:50:39 2020
+| Host         : seba-HP-ProBook-450-G6 running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myip_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_myip_0_3 (user.org:user:myip:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1.1 (lin64) Build 2580384 Sat Jun 29 08:04:45 MDT 2019
+| Date         : Mon Sep 21 18:19:37 2020
+| Host         : seba-HP-ProBook-450-G6 running 64-bit Ubuntu 18.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_myip_0_3'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_myip_0_3 (user.org:user:myip:1.0) from (Rev. 7) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_myip_0_3'.
+
+
+-Upgrade has added interface 'adc_clk' (xilinx.com:signal:clock:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_myip_0_3'. These changes may impact your design.
+
+
+-Upgrade has added port 'adc_clk'
+
+

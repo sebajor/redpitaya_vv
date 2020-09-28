@@ -1,0 +1,406 @@
+
+*** Running vivado
+    with args -log system_util_ds_buf_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_util_ds_buf_1_0.tcl
+
+
+****** Vivado v2019.1.1 (64-bit)
+  **** SW Build 2580384 on Sat Jun 29 08:04:45 MDT 2019
+  **** IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source system_util_ds_buf_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/seba/Workspace/vivado/models/redpitaya_guide/tmp/cores'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/seba/Workspace/projects/rp_vv'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/seba/Workspace/projects/rp_vv' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/seba/Workspace/projects/rp_vv/project/project.runs/system_util_ds_buf_1_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top system_util_ds_buf_1_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8578 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1782.469 ; gain = 154.684 ; free physical = 160 ; free virtual = 3183
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_util_ds_buf_1_0' [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/synth/system_util_ds_buf_1_0.vhd:64]
+	Parameter C_BUF_TYPE bound to: IBUFDS - type: string 
+	Parameter C_SIZE bound to: 2 - type: integer 
+	Parameter C_BUFGCE_DIV bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'util_ds_buf' declared at '/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/util_ds_buf.vhd:71' bound to instance 'U0' of component 'util_ds_buf' [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/synth/system_util_ds_buf_1_0.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'util_ds_buf' [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/util_ds_buf.vhd:131]
+	Parameter C_BUF_TYPE bound to: IBUFDS - type: string 
+	Parameter C_SIZE bound to: 2 - type: integer 
+	Parameter C_BUFGCE_DIV bound to: 1 - type: integer 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'IBUFDS_I' to cell 'IBUFDS' [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/util_ds_buf.vhd:237]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'IBUFDS_I' to cell 'IBUFDS' [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/util_ds_buf.vhd:237]
+WARNING: [Synth 8-3848] Net BUFG_O in module/entity util_ds_buf does not have driver. [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/util_ds_buf.vhd:102]
+WARNING: [Synth 8-3848] Net BUFGCE_O in module/entity util_ds_buf does not have driver. [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/util_ds_buf.vhd:107]
+WARNING: [Synth 8-3848] Net BUFH_O in module/entity util_ds_buf does not have driver. [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/util_ds_buf.vhd:112]
+WARNING: [Synth 8-3848] Net BUFHCE_O in module/entity util_ds_buf does not have driver. [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/util_ds_buf.vhd:117]
+WARNING: [Synth 8-3848] Net BUFG_GT_O in module/entity util_ds_buf does not have driver. [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/util_ds_buf.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'util_ds_buf' (1#1) [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/util_ds_buf.vhd:131]
+INFO: [Synth 8-256] done synthesizing module 'system_util_ds_buf_1_0' (2#1) [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/synth/system_util_ds_buf_1_0.vhd:64]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_O[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_O[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFH_O[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFH_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_O[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_O[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_IO[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_IO[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IBUF_DS_CEB[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IBUF_DS_CEB[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port OBUF_IN[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port OBUF_IN[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_T[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_T[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_I[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_I[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_I[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_CE[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_CE[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_CLR[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_CLR[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFH_I[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFH_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_I[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_CE[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_CE[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_I[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CE[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CE[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CEMASK[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CEMASK[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CLR[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CLR[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CLRMASK[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CLRMASK[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[5]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[4]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[3]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[2]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1840.188 ; gain = 212.402 ; free physical = 203 ; free virtual = 3069
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1846.125 ; gain = 218.340 ; free physical = 252 ; free virtual = 3118
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1846.125 ; gain = 218.340 ; free physical = 252 ; free virtual = 3118
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/system_util_ds_buf_1_0_ooc.xdc] for cell 'U0'
+WARNING: [Constraints 18-633] Creating clock IBUF_DS_P[1] with 2 sources. [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/system_util_ds_buf_1_0_ooc.xdc:10]
+Finished Parsing XDC File [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/system_util_ds_buf_1_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/system_util_ds_buf_1_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/system_util_ds_buf_1_0_board.xdc] for cell 'U0'
+Parsing XDC File [/home/seba/Workspace/projects/rp_vv/project/project.runs/system_util_ds_buf_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/seba/Workspace/projects/rp_vv/project/project.runs/system_util_ds_buf_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1939.875 ; gain = 0.000 ; free physical = 135 ; free virtual = 3018
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1939.875 ; gain = 0.000 ; free physical = 166 ; free virtual = 3049
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 280 ; free virtual = 3165
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 285 ; free virtual = 3169
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/seba/Workspace/projects/rp_vv/project/project.runs/system_util_ds_buf_1_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 292 ; free virtual = 3177
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 305 ; free virtual = 3191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_O[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_O[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFH_O[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFH_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_O[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_O[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_O[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_IO[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_IO[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IBUF_DS_CEB[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IBUF_DS_CEB[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port OBUF_IN[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port OBUF_IN[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_T[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_T[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_I[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port IOBUF_IO_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_I[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_I[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_CE[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_CE[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_CLR[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFGCE_CLR[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFH_I[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFH_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_I[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_CE[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFHCE_CE[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_I[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_I[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CE[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CE[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CEMASK[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CEMASK[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CLR[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CLR[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CLRMASK[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_CLRMASK[0]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[5]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[4]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[3]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[2]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[1]
+WARNING: [Synth 8-3331] design util_ds_buf has unconnected port BUFG_GT_DIV[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 280 ; free virtual = 3173
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 123 ; free virtual = 2777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 123 ; free virtual = 2776
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 125 ; free virtual = 2765
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 126 ; free virtual = 2738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 126 ; free virtual = 2738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 126 ; free virtual = 2738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 126 ; free virtual = 2738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 126 ; free virtual = 2738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 126 ; free virtual = 2738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |IBUFDS |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+------------+------+
+|      |Instance |Module      |Cells |
++------+---------+------------+------+
+|1     |top      |            |     2|
+|2     |  U0     |util_ds_buf |     2|
++------+---------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 126 ; free virtual = 2738
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 50 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1939.875 ; gain = 218.340 ; free physical = 182 ; free virtual = 2794
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1939.875 ; gain = 312.090 ; free physical = 182 ; free virtual = 2794
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1952.625 ; gain = 0.000 ; free physical = 126 ; free virtual = 2740
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1952.625 ; gain = 524.906 ; free physical = 202 ; free virtual = 2815
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1952.625 ; gain = 0.000 ; free physical = 201 ; free virtual = 2815
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/seba/Workspace/projects/rp_vv/project/project.runs/system_util_ds_buf_1_0_synth_1/system_util_ds_buf_1_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_util_ds_buf_1_0, cache-ID = 4adee0cccdf74d5e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1952.625 ; gain = 0.000 ; free physical = 315 ; free virtual = 2962
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/seba/Workspace/projects/rp_vv/project/project.runs/system_util_ds_buf_1_0_synth_1/system_util_ds_buf_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_util_ds_buf_1_0_utilization_synth.rpt -pb system_util_ds_buf_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 12 19:19:37 2020...

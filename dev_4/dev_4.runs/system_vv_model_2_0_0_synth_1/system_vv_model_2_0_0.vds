@@ -1,0 +1,1430 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:04:45 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Tue Sep 22 18:52:15 2020
+# Process ID: 21043
+# Current directory: /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.runs/system_vv_model_2_0_0_synth_1
+# Command line: vivado -log system_vv_model_2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_vv_model_2_0_0.tcl
+# Log file: /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.runs/system_vv_model_2_0_0_synth_1/system_vv_model_2_0_0.vds
+# Journal file: /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.runs/system_vv_model_2_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_vv_model_2_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/seba/Workspace/projects/rp_vv/ip_repo/msdft_control_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-2207] Repository '/home/seba/Workspace/projects/rp_vv/ip_repo/msdft_control_1.0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/seba/Workspace/projects/rp_vv/ip_repo/msdft_control_1.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/seba/Workspace/projects/rp_vv/ip_repo/myip_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/seba/Workspace/vivado/models/redpitaya_guide/tmp/cores'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/seba/Workspace/projects/rp_vv'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/home/seba/Workspace/projects/rp_vv' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.runs/system_vv_model_2_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:module_ref:bram_intf:1.0'. The one found in IP location '/home/seba/Workspace/projects/rp_vv/sim_dds/sim_dds.srcs/sources_1/bd/mref/bram_intf' will take precedence over the same IP in locations: 
+   /home/seba/Workspace/projects/rp_vv/dev/dev.srcs/sources_1/bd/mref/bram_intf
+   /home/seba/Workspace/projects/rp_vv/dev2/dev2.srcs/sources_1/bd/mref/bram_intf
+   /home/seba/Workspace/projects/rp_vv/test/test.srcs/sources_1/bd/mref/bram_intf
+   /home/seba/Workspace/projects/rp_vv/dev_3_ext_ckl/dev_3_ext_ckl.srcs/sources_1/bd/mref/bram_intf
+   /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/mref/bram_intf
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:module_ref:bram_reader:1.0'. The one found in IP location '/home/seba/Workspace/projects/rp_vv/sim_dds/sim_dds.srcs/sources_1/bd/mref/bram_reader' will take precedence over the same IP in locations: 
+   /home/seba/Workspace/projects/rp_vv/dev/dev.srcs/sources_1/bd/mref/bram_reader
+   /home/seba/Workspace/projects/rp_vv/dev2/dev2.srcs/sources_1/bd/mref/bram_reader
+   /home/seba/Workspace/projects/rp_vv/test/test.srcs/sources_1/bd/mref/bram_reader
+   /home/seba/Workspace/projects/rp_vv/dev_3_ext_ckl/dev_3_ext_ckl.srcs/sources_1/bd/mref/bram_reader
+   /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/mref/bram_reader
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:module_ref:logic_extended:1.0'. The one found in IP location '/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/mref/logic_extended' will take precedence over the same IP in location /home/seba/Workspace/projects/rp_vv/dev/dev.srcs/sources_1/bd/mref/logic_extended
+Command: synth_design -top system_vv_model_2_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21142 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1777.926 ; gain = 154.715 ; free physical = 2027 ; free virtual = 5094
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_vv_model_2_0_0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_vv_model_2_0_0/synth/system_vv_model_2_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:2681]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_default_clock_driver' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:2659]
+INFO: [Synth 8-6157] synthesizing module 'xlclockdriver' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/xlclockdriver_rd.v:22]
+	Parameter log_2_period bound to: 32'sb00000000000000000000000000000001 
+	Parameter period bound to: 32'sb00000000000000000000000000000001 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter max_pipeline_regs bound to: 32'sb00000000000000000000000000001000 
+	Parameter num_pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter factor bound to: 32'sb00000000000000000000000000000101 
+	Parameter rem_pipeline_regs bound to: 32'sb00000000000000000000000000000001 
+	Parameter trunc_period bound to: 1'b1 
+	Parameter period_floor bound to: 32'sb00000000000000000000000000000010 
+	Parameter power_of_2_counter bound to: 32'sb00000000000000000000000000000001 
+	Parameter cnt_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter clk_for_ce_pulse_minus1 bound to: 1'b0 
+	Parameter clk_for_ce_pulse_minus2 bound to: 1'b0 
+	Parameter clk_for_ce_pulse_minus_regs bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:3]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:45]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter init_index_val bound to: 1'b0 
+	Parameter result bound to: 1'b0 
+	Parameter init_const bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (1#1) [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init' (2#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init' (3#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:3]
+WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/xlclockdriver_rd.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'xlclockdriver' (4#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/xlclockdriver_rd.v:22]
+WARNING: [Synth 8-7023] instance 'clockdriver' of module 'xlclockdriver' has 7 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:2670]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_default_clock_driver' (5#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:2659]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_struct' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:2041]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_c_to_ri_x1' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_reinterpret_bf68d9cf1b' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1767]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_reinterpret_bf68d9cf1b' (6#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1767]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlslice' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+	Parameter new_msb bound to: 63 - type: integer 
+	Parameter new_lsb bound to: 0 - type: integer 
+	Parameter x_width bound to: 128 - type: integer 
+	Parameter y_width bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlslice' (7#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlslice__parameterized0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+	Parameter new_msb bound to: 127 - type: integer 
+	Parameter new_lsb bound to: 64 - type: integer 
+	Parameter x_width bound to: 128 - type: integer 
+	Parameter y_width bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlslice__parameterized0' (7#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_c_to_ri_x1' (8#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_cmult' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:379]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_a_expand' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_reinterpret_97f98571e8' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2167]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_reinterpret_97f98571e8' (9#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2167]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlslice__parameterized1' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+	Parameter new_msb bound to: 31 - type: integer 
+	Parameter new_lsb bound to: 0 - type: integer 
+	Parameter x_width bound to: 128 - type: integer 
+	Parameter y_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlslice__parameterized1' (9#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlslice__parameterized2' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+	Parameter new_msb bound to: 63 - type: integer 
+	Parameter new_lsb bound to: 32 - type: integer 
+	Parameter x_width bound to: 128 - type: integer 
+	Parameter y_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlslice__parameterized2' (9#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlslice__parameterized3' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+	Parameter new_msb bound to: 95 - type: integer 
+	Parameter new_lsb bound to: 64 - type: integer 
+	Parameter x_width bound to: 128 - type: integer 
+	Parameter y_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlslice__parameterized3' (9#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlslice__parameterized4' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+	Parameter new_msb bound to: 127 - type: integer 
+	Parameter new_lsb bound to: 96 - type: integer 
+	Parameter x_width bound to: 128 - type: integer 
+	Parameter y_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlslice__parameterized4' (9#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_a_expand' (10#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_a_replicate' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:184]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_bussify' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:149]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_concat_9f19cbe494' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_concat_9f19cbe494' (11#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:39]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_reinterpret_ae39878e24' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:236]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_reinterpret_ae39878e24' (12#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:236]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_bussify' (13#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:149]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_a_replicate' (14#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:184]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_b_expand' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:199]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_b_expand' (15#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:199]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_b_replicate' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:326]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_bussify_x0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:291]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_bussify_x0' (16#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:291]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_b_replicate' (17#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:326]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_ri_to_c_x0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:341]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_reinterpret_1bc6f89354' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:223]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_reinterpret_1bc6f89354' (18#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:223]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_ri_to_c_x0' (19#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:341]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_addsub_5948808a8c' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1780]
+	Parameter const_value bound to: 65'sb00000000000000000000000000000000000000000000000000000000000000000 
+	Parameter const_value_x_000000 bound to: 1'b0 
+	Parameter const_value_x_000001 bound to: 1'b0 
+	Parameter const_value_x_000002 bound to: 1'b1 
+	Parameter const_value_x_000003 bound to: 1'b0 
+	Parameter const_value_x_000004 bound to: 1'b0 
+	Parameter const_value_x_000005 bound to: 1'b0 
+	Parameter const_value_x_000006 bound to: 1'b0 
+	Parameter const_value_x_000007 bound to: 3'b000 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init__parameterized0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:3]
+	Parameter width bound to: 3 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 3'b010 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init__parameterized0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:45]
+	Parameter width bound to: 3 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 3'b010 
+	Parameter init_index_val bound to: 1'b0 
+	Parameter result bound to: 3'b000 
+	Parameter init_const bound to: 3'b010 
+INFO: [Synth 8-6157] synthesizing module 'FDSE' [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13800]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_S_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDSE' (20#1) [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13800]
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init__parameterized0' (20#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init__parameterized0' (20#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:3]
+WARNING: [Synth 8-6014] Unused sequential element cout_mem_92_22_reg[0] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1832]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_addsub_5948808a8c' (21#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1780]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_addsub_c083337998' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1859]
+	Parameter const_value bound to: 65'sb00000000000000000000000000000000000000000000000000000000000000000 
+	Parameter const_value_x_000000 bound to: 1'b0 
+	Parameter const_value_x_000001 bound to: 1'b0 
+	Parameter const_value_x_000002 bound to: 1'b1 
+	Parameter const_value_x_000003 bound to: 1'b0 
+	Parameter const_value_x_000004 bound to: 1'b0 
+	Parameter const_value_x_000005 bound to: 1'b0 
+	Parameter const_value_x_000006 bound to: 1'b0 
+	Parameter const_value_x_000007 bound to: 3'b000 
+WARNING: [Synth 8-6014] Unused sequential element cout_mem_92_22_reg[0] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1911]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_addsub_c083337998' (22#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1859]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlconvert_pipeline' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2077]
+	Parameter din_width bound to: 65 - type: integer 
+	Parameter din_bin_pt bound to: 62 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 64 - type: integer 
+	Parameter dout_bin_pt bound to: 63 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sub_module_vv_model_2_xlconvert_pipeline' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1938]
+	Parameter old_width bound to: 65 - type: integer 
+	Parameter old_bin_pt bound to: 62 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 64 - type: integer 
+	Parameter new_bin_pt bound to: 63 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000001000011 
+	Parameter fp_bin_pt bound to: 62 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000001000100 
+	Parameter q_bin_pt bound to: 63 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'trunc' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000001000011 
+	Parameter old_bin_pt bound to: 62 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000001000100 
+	Parameter new_bin_pt bound to: 63 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb11111111111111111111111111111111 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000001 
+INFO: [Synth 8-6157] synthesizing module 'pad_lsb' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:158]
+	Parameter orig_width bound to: 32'sb00000000000000000000000001000011 
+	Parameter new_width bound to: 32'sb00000000000000000000000001000100 
+	Parameter pad_pos bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'pad_lsb' (23#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:158]
+INFO: [Synth 8-6157] synthesizing module 'extend_msb' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000001000100 
+	Parameter new_width bound to: 32'sb00000000000000000000000001000100 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000001000100 
+	Parameter new_width bound to: 32'sb00000000000000000000000001000100 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext' (24#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb' (25#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc' (26#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:754]
+	Parameter old_width bound to: 32'sb00000000000000000000000001000100 
+	Parameter old_bin_pt bound to: 63 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 64 - type: integer 
+	Parameter new_bin_pt bound to: 63 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cast' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:13]
+	Parameter old_width bound to: 32'sb00000000000000000000000001000100 
+	Parameter old_bin_pt bound to: 63 - type: integer 
+	Parameter new_width bound to: 64 - type: integer 
+	Parameter new_bin_pt bound to: 63 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast' (27#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith' (28#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'synth_reg' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:94]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter complete_num_srlc33es bound to: 0 - type: integer 
+	Parameter remaining_latency bound to: 1 - type: integer 
+	Parameter temp_num_srlc33es bound to: 1 - type: integer 
+	Parameter num_srlc33es bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'srlc33e' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:60]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter a bound to: 6'sb111111 
+INFO: [Synth 8-6157] synthesizing module 'FDE' [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13565]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDE' (29#1) [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13565]
+INFO: [Synth 8-6155] done synthesizing module 'srlc33e' (30#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg' (31#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:94]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:13]
+	Parameter old_width bound to: 65 - type: integer 
+	Parameter old_bin_pt bound to: 62 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000001000011 
+	Parameter new_bin_pt bound to: 62 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized0' (31#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'sub_module_vv_model_2_xlconvert_pipeline' (32#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1938]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlconvert_pipeline' (33#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2077]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_mult_fc004f5f3c' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2122]
+	Parameter const_value bound to: 64'sb0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter const_value_x_000000 bound to: 2'b11 
+	Parameter const_value_x_000001 bound to: 7'b1000000 
+	Parameter const_value_x_000002 bound to: 6'b111110 
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_mult_fc004f5f3c' (34#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2122]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_cmult' (35#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:379]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_complex_conj' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:955]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_bus_create' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:532]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_concat_a66a880e9d' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2212]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_concat_a66a880e9d' (36#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2212]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_reinterpret_9014dd9fd1' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2228]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_reinterpret_9014dd9fd1' (37#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2228]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_bus_create' (38#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:532]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_bus_expand' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:570]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlslice__parameterized5' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+	Parameter new_msb bound to: 31 - type: integer 
+	Parameter new_lsb bound to: 0 - type: integer 
+	Parameter x_width bound to: 64 - type: integer 
+	Parameter y_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlslice__parameterized5' (38#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlslice__parameterized6' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+	Parameter new_msb bound to: 63 - type: integer 
+	Parameter new_lsb bound to: 32 - type: integer 
+	Parameter x_width bound to: 64 - type: integer 
+	Parameter y_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlslice__parameterized6' (38#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_bus_expand' (39#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:570]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_imag_negate' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:667]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_bussify_x1' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:620]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_reinterpret_124581812e' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2291]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_reinterpret_124581812e' (40#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2291]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_bussify_x1' (41#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:620]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_debus' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:638]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlslice__parameterized7' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+	Parameter new_msb bound to: 31 - type: integer 
+	Parameter new_lsb bound to: 0 - type: integer 
+	Parameter x_width bound to: 32 - type: integer 
+	Parameter y_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlslice__parameterized7' (41#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:261]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_debus' (42#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:638]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_negate_a95982a809' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2239]
+	Parameter const_value bound to: 0 - type: integer 
+	Parameter const_value_x_000000 bound to: 1'b1 
+	Parameter const_value_x_000001 bound to: 1'b0 
+	Parameter const_value_x_000002 bound to: 33'sb000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_negate_a95982a809' (43#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2239]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_imag_negate' (44#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:667]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_munge_in' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:789]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_join_x0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:701]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_join_x0' (45#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:701]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_split_x0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:739]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_split_x0' (46#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:739]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_munge_in' (47#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:789]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_munge_out' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:916]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_join' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:828]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_join' (48#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:828]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_split' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:866]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_split' (49#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:866]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_munge_out' (50#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:916]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_delay_c1fdabaadc' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2180]
+	Parameter const_value bound to: 0 - type: integer 
+	Parameter const_value_x_000000 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_delay_c1fdabaadc' (51#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2180]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_complex_conj' (52#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:955]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_pipeline1' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1009]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlregister' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2304]
+	Parameter d_width bound to: 1 - type: integer 
+	Parameter init_value bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init__parameterized1' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:3]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init__parameterized1' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:45]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter init_index_val bound to: 1'b0 
+	Parameter result bound to: 1'b0 
+	Parameter init_const bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init__parameterized1' (52#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init__parameterized1' (52#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlregister' (53#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2304]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_pipeline1' (54#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1009]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_pipeline10' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1064]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlregister__parameterized0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2304]
+	Parameter d_width bound to: 32 - type: integer 
+	Parameter init_value bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init__parameterized2' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:3]
+	Parameter width bound to: 32 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init__parameterized2' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:45]
+	Parameter width bound to: 32 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 0 - type: integer 
+	Parameter init_index_val bound to: 1'b0 
+	Parameter result bound to: 32'b00000000000000000000000000000000 
+	Parameter init_const bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init__parameterized2' (54#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init__parameterized2' (54#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlregister__parameterized0' (54#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2304]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_pipeline10' (55#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1064]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_pipeline11' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1119]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_pipeline11' (56#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1119]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_pipeline2' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1174]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlregister__parameterized1' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2304]
+	Parameter d_width bound to: 64 - type: integer 
+	Parameter init_value bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init__parameterized3' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:3]
+	Parameter width bound to: 64 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init__parameterized3' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:45]
+	Parameter width bound to: 64 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter init_index_val bound to: 1'b0 
+	Parameter result bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter init_const bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init__parameterized3' (56#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init__parameterized3' (56#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg_w_init.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlregister__parameterized1' (56#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2304]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_pipeline2' (57#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1174]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_pipeline3' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1229]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_pipeline3' (58#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1229]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_pipeline4' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1284]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_pipeline4' (59#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1284]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_pipeline5' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1339]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_pipeline5' (60#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1339]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_pipeline6' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1394]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_pipeline6' (61#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1394]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_pipeline7' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1475]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_pipeline7' (62#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1475]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_pipeline8' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1530]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_pipeline8' (63#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1530]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_pipeline9' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1585]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_pipeline9' (64#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1585]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_power' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1703]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_c_to_ri' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1653]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_c_to_ri' (65#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1653]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_xlmult' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2419]
+	Parameter core_name0 bound to: vv_model_2_mult_gen_v12_0_i0 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 31 - type: integer 
+	Parameter a_arith bound to: 2 - type: integer 
+	Parameter b_width bound to: 32 - type: integer 
+	Parameter b_bin_pt bound to: 31 - type: integer 
+	Parameter b_arith bound to: 2 - type: integer 
+	Parameter p_width bound to: 64 - type: integer 
+	Parameter p_bin_pt bound to: 62 - type: integer 
+	Parameter p_arith bound to: 2 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter c_a_width bound to: 32 - type: integer 
+	Parameter c_b_width bound to: 32 - type: integer 
+	Parameter c_type bound to: 0 - type: integer 
+	Parameter c_a_type bound to: 0 - type: integer 
+	Parameter c_b_type bound to: 0 - type: integer 
+	Parameter c_baat bound to: 32 - type: integer 
+	Parameter oversample bound to: 1 - type: integer 
+	Parameter multsign bound to: 2 - type: integer 
+	Parameter c_output_width bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'vv_model_2_mult_gen_v12_0_i0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_vv_model_2_0_0/vv_model_2_mult_gen_v12_0_i0/synth/vv_model_2_mult_gen_v12_0_i0.vhd:70]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_vv_model_2_0_0/vv_model_2_mult_gen_v12_0_i0/synth/vv_model_2_mult_gen_v12_0_i0.vhd:73]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_vv_model_2_0_0/vv_model_2_mult_gen_v12_0_i0/synth/vv_model_2_mult_gen_v12_0_i0.vhd:73]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_CE bound to: 1 - type: integer 
+	Parameter C_HAS_SCLR bound to: 1 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 63 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 1 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_15' declared at '/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_vv_model_2_0_0/vv_model_2_mult_gen_v12_0_i0/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_15' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_vv_model_2_0_0/vv_model_2_mult_gen_v12_0_i0/synth/vv_model_2_mult_gen_v12_0_i0.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'vv_model_2_mult_gen_v12_0_i0' (71#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_vv_model_2_0_0/vv_model_2_mult_gen_v12_0_i0/synth/vv_model_2_mult_gen_v12_0_i0.vhd:70]
+INFO: [Synth 8-6157] synthesizing module 'zero_ext' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:186]
+	Parameter old_width bound to: 32 - type: integer 
+	Parameter new_width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'zero_ext' (72#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:186]
+INFO: [Synth 8-6157] synthesizing module 'convert_type' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:775]
+	Parameter old_width bound to: 64 - type: integer 
+	Parameter old_bin_pt bound to: 32'sb00000000000000000000000000111110 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 64 - type: integer 
+	Parameter new_bin_pt bound to: 62 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000001000010 
+	Parameter fp_bin_pt bound to: 32'sb00000000000000000000000000111110 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000001000010 
+	Parameter q_bin_pt bound to: 62 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000001000010 
+	Parameter old_bin_pt bound to: 32'sb00000000000000000000000000111110 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000001000010 
+	Parameter new_bin_pt bound to: 62 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000001000010 
+	Parameter new_width bound to: 32'sb00000000000000000000000001000010 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000001000010 
+	Parameter new_width bound to: 32'sb00000000000000000000000001000010 
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized0' (72#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized0' (72#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized0' (72#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:754]
+	Parameter old_width bound to: 32'sb00000000000000000000000001000010 
+	Parameter old_bin_pt bound to: 62 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 64 - type: integer 
+	Parameter new_bin_pt bound to: 62 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized1' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:13]
+	Parameter old_width bound to: 32'sb00000000000000000000000001000010 
+	Parameter old_bin_pt bound to: 62 - type: integer 
+	Parameter new_width bound to: 64 - type: integer 
+	Parameter new_bin_pt bound to: 62 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized1' (72#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized0' (72#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized2' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:13]
+	Parameter old_width bound to: 64 - type: integer 
+	Parameter old_bin_pt bound to: 32'sb00000000000000000000000000111110 
+	Parameter new_width bound to: 32'sb00000000000000000000000001000010 
+	Parameter new_bin_pt bound to: 32'sb00000000000000000000000000111110 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized2' (72#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type' (73#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/convert_type.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_xlmult' (74#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2419]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_addsub_56ffe7ce6b' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2329]
+	Parameter const_value bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter const_value_x_000000 bound to: 1'b0 
+	Parameter const_value_x_000001 bound to: 1'b0 
+	Parameter const_value_x_000002 bound to: 2'b10 
+	Parameter const_value_x_000003 bound to: 1'b0 
+	Parameter const_value_x_000004 bound to: 1'b0 
+	Parameter const_value_x_000005 bound to: 1'b0 
+	Parameter const_value_x_000006 bound to: 1'b0 
+	Parameter const_value_x_000007 bound to: 3'b000 
+WARNING: [Synth 8-6014] Unused sequential element cout_mem_92_22_reg[0] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2388]
+WARNING: [Synth 8-6014] Unused sequential element cout_mem_92_22_reg[1] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2388]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_addsub_56ffe7ce6b' (75#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2329]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_power' (76#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1703]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_power1' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1859]
+INFO: [Synth 8-6157] synthesizing module 'vv_model_2_c_to_ri_x0' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1809]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_c_to_ri_x0' (77#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1809]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_power1' (78#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1859]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_ri_to_c' (79#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:1965]
+INFO: [Synth 8-6155] done synthesizing module 'vv_model_2_ri_to_c1' (80#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2.v:2003]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_constant_bdb68a70d7' (81#1) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:55]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter din_width bound to: 64 - type: integer 
+	Parameter din_bin_pt bound to: 27 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter dout_bin_pt bound to: 14 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter old_width bound to: 64 - type: integer 
+	Parameter old_bin_pt bound to: 27 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32 - type: integer 
+	Parameter new_bin_pt bound to: 14 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000001000010 
+	Parameter fp_bin_pt bound to: 27 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000110101 
+	Parameter q_bin_pt bound to: 14 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000001000010 
+	Parameter old_bin_pt bound to: 27 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000110101 
+	Parameter new_bin_pt bound to: 14 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000001101 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000001101 
+	Parameter old_width bound to: 32'sb00000000000000000000000000110101 
+	Parameter new_width bound to: 32'sb00000000000000000000000000110101 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000110101 
+	Parameter new_width bound to: 32'sb00000000000000000000000000110101 
+	Parameter old_width bound to: 32'sb00000000000000000000000000110101 
+	Parameter old_bin_pt bound to: 14 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32 - type: integer 
+	Parameter new_bin_pt bound to: 14 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+	Parameter old_width bound to: 32'sb00000000000000000000000000110101 
+	Parameter old_bin_pt bound to: 14 - type: integer 
+	Parameter new_width bound to: 32 - type: integer 
+	Parameter new_bin_pt bound to: 14 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter old_width bound to: 64 - type: integer 
+	Parameter old_bin_pt bound to: 27 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000001000010 
+	Parameter new_bin_pt bound to: 27 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter complete_num_srlc33es bound to: 0 - type: integer 
+	Parameter remaining_latency bound to: 1 - type: integer 
+	Parameter temp_num_srlc33es bound to: 1 - type: integer 
+	Parameter num_srlc33es bound to: 1 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter a bound to: 6'sb111111 
+	Parameter width bound to: 14 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+	Parameter width bound to: 14 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+	Parameter complete_num_srlc33es bound to: 0 - type: integer 
+	Parameter remaining_latency bound to: 3 - type: integer 
+	Parameter temp_num_srlc33es bound to: 1 - type: integer 
+	Parameter num_srlc33es bound to: 1 - type: integer 
+	Parameter width bound to: 14 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+	Parameter a bound to: 6'sb000001 
+	Parameter INIT bound to: 32'b00000000000000000000000000000000 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+	Parameter complete_num_srlc33es bound to: 0 - type: integer 
+	Parameter remaining_latency bound to: 3 - type: integer 
+	Parameter temp_num_srlc33es bound to: 1 - type: integer 
+	Parameter num_srlc33es bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+	Parameter a bound to: 6'sb000001 
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/synth_reg.v:76]
+	Parameter width bound to: 64 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter complete_num_srlc33es bound to: 0 - type: integer 
+	Parameter remaining_latency bound to: 1 - type: integer 
+	Parameter temp_num_srlc33es bound to: 1 - type: integer 
+	Parameter num_srlc33es bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter a bound to: 6'sb111111 
+	Parameter new_msb bound to: 1 - type: integer 
+	Parameter new_lsb bound to: 1 - type: integer 
+	Parameter x_width bound to: 32 - type: integer 
+	Parameter y_width bound to: 1 - type: integer 
+	Parameter new_msb bound to: 0 - type: integer 
+	Parameter new_lsb bound to: 0 - type: integer 
+	Parameter x_width bound to: 32 - type: integer 
+	Parameter y_width bound to: 1 - type: integer 
+	Parameter new_msb bound to: 0 - type: integer 
+	Parameter new_lsb bound to: 0 - type: integer 
+	Parameter x_width bound to: 1 - type: integer 
+	Parameter y_width bound to: 1 - type: integer 
+	Parameter new_msb bound to: 15 - type: integer 
+	Parameter new_lsb bound to: 0 - type: integer 
+	Parameter x_width bound to: 32 - type: integer 
+	Parameter y_width bound to: 16 - type: integer 
+	Parameter new_msb bound to: 31 - type: integer 
+	Parameter new_lsb bound to: 16 - type: integer 
+	Parameter x_width bound to: 32 - type: integer 
+	Parameter y_width bound to: 16 - type: integer 
+	Parameter new_msb bound to: 13 - type: integer 
+	Parameter new_lsb bound to: 0 - type: integer 
+	Parameter x_width bound to: 32 - type: integer 
+	Parameter y_width bound to: 14 - type: integer 
+	Parameter new_msb bound to: 29 - type: integer 
+	Parameter new_lsb bound to: 16 - type: integer 
+	Parameter x_width bound to: 32 - type: integer 
+	Parameter y_width bound to: 14 - type: integer 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:645]
+	Parameter DataWidth bound to: 14 - type: integer 
+	Parameter AddressRange bound to: 16384 - type: integer 
+	Parameter AddressWidth bound to: 14 - type: integer 
+	Parameter DWIDTH bound to: 14 - type: integer 
+	Parameter AWIDTH bound to: 14 - type: integer 
+	Parameter MEM_SIZE bound to: 16384 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1503]
+INFO: [Synth 8-3876] $readmem data file './msdft_delay_re_V_ram.dat' is read successfully [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1506]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter dout_WIDTH bound to: 31 - type: integer 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter din2_WIDTH bound to: 31 - type: integer 
+	Parameter dout_WIDTH bound to: 31 - type: integer 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter din2_WIDTH bound to: 31 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-3331] design modulation has unconnected port ap_rst
+WARNING: [Synth 8-3331] design msdft_delay_re_V has unconnected port reset
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[31]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[30]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[15]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[14]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[13]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[12]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[11]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[10]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[9]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[8]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[7]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[6]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[5]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[4]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[3]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[2]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[1]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized14 has unconnected port x[0]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[31]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[30]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[29]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[28]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[27]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[26]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[25]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[24]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[23]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[22]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[21]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[20]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[19]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[18]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[17]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[16]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[15]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized13 has unconnected port x[14]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[15]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[14]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[13]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[12]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[11]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[10]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[9]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[8]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[7]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[6]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[5]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[4]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[3]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[2]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[1]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized12 has unconnected port x[0]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[31]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[30]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[29]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[28]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[27]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[26]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[25]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[24]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[23]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[22]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[21]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[20]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[19]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[18]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[17]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized11 has unconnected port x[16]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[31]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[30]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[29]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[28]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[27]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[26]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[25]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[24]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[23]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[22]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[21]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[20]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[19]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[18]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[17]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[16]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[15]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[14]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[13]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[12]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[11]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[10]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[9]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[8]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[7]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[6]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[5]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[4]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[3]
+WARNING: [Synth 8-3331] design vv_model_2_xlslice__parameterized9 has unconnected port x[2]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1869.613 ; gain = 246.402 ; free physical = 2015 ; free virtual = 5094
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1869.613 ; gain = 246.402 ; free physical = 2031 ; free virtual = 5098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1869.613 ; gain = 246.402 ; free physical = 2031 ; free virtual = 5098
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 494 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_vv_model_2_0_0/constrs/vv_model_2.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_vv_model_2_0_0/constrs/vv_model_2.xdc] for cell 'inst'
+Parsing XDC File [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.runs/system_vv_model_2_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.runs/system_vv_model_2_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2006.363 ; gain = 0.000 ; free physical = 1893 ; free virtual = 4987
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 478 instances were transformed.
+  FDE => FDRE: 478 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2009.332 ; gain = 2.969 ; free physical = 1895 ; free virtual = 4990
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2009.332 ; gain = 386.121 ; free physical = 1989 ; free virtual = 5081
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2009.332 ; gain = 386.121 ; free physical = 1989 ; free virtual = 5081
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.runs/system_vv_model_2_0_0_synth_1/dont_touch.xdc, line 12).
+Applied set_property DONT_TOUCH = true for inst/vv_model_2_struct/power/imag_square/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/vv_model_2_struct/power/real_square/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/vv_model_2_struct/power1/imag_square/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/vv_model_2_struct/power1/real_square/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2009.332 ; gain = 386.121 ; free physical = 1989 ; free virtual = 5080
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2009.332 ; gain = 386.121 ; free physical = 1983 ; free virtual = 5072
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/cmult/a_replicate/bussify/reinterpret1' (sysgen_reinterpret_ae39878e24) to 'inst/vv_model_2_struct/cmult/a_replicate/bussify/reinterpret2'
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/cmult/b_replicate/bussify/reinterpret1' (sysgen_reinterpret_ae39878e24) to 'inst/vv_model_2_struct/cmult/b_replicate/bussify/reinterpret2'
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/constant1' (sysgen_constant_bdb68a70d7) to 'inst/vv_model_2_struct/constant2'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'vv_model_2_struct/vivado_hls2/ap_CS_fsm_reg[0:0]' into 'vv_model_2_struct/vivado_hls1/ap_CS_fsm_reg[0:0]' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:861]
+INFO: [Synth 8-4471] merging register 'vv_model_2_struct/vivado_hls2/ap_phi_reg_pp0_iter1_flag_loc_1_reg_205_reg[0:0]' into 'vv_model_2_struct/vivado_hls1/ap_phi_reg_pp0_iter1_flag_loc_1_reg_205_reg[0:0]' [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1023]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/addsub_im/op_mem_91_20_reg[0]' and it is trimmed from '65' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1823]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/imre/op_mem_65_20_reg[2]' and it is trimmed from '64' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/imre/op_mem_65_20_reg[1]' and it is trimmed from '64' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/imre/op_mem_65_20_reg[0]' and it is trimmed from '64' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/addsub_re/op_mem_91_20_reg[0]' and it is trimmed from '65' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:1902]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/imim/op_mem_65_20_reg[2]' and it is trimmed from '64' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/imim/op_mem_65_20_reg[1]' and it is trimmed from '64' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/imim/op_mem_65_20_reg[0]' and it is trimmed from '64' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/rere/op_mem_65_20_reg[2]' and it is trimmed from '64' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/rere/op_mem_65_20_reg[1]' and it is trimmed from '64' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/rere/op_mem_65_20_reg[0]' and it is trimmed from '64' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2]' and it is trimmed from '64' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1]' and it is trimmed from '64' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vv_model_2_struct/cmult/reim/op_mem_65_20_reg[0]' and it is trimmed from '64' to '63' bits. [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2161]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2161]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2161]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2161]
+WARNING: [Synth 8-6014] Unused sequential element vv_model_2_struct/cmult/reim/op_mem_65_20_reg[0] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-6014] Unused sequential element vv_model_2_struct/cmult/imre/op_mem_65_20_reg[0] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-6014] Unused sequential element vv_model_2_struct/cmult/imim/op_mem_65_20_reg[0] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-6014] Unused sequential element vv_model_2_struct/cmult/imim/op_mem_65_20_reg[0] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-6014] Unused sequential element vv_model_2_struct/cmult/imim/op_mem_65_20_reg[0] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-6014] Unused sequential element vv_model_2_struct/cmult/imim/op_mem_65_20_reg[0] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-6014] Unused sequential element vv_model_2_struct/cmult/rere/op_mem_65_20_reg[0] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-6014] Unused sequential element vv_model_2_struct/cmult/rere/op_mem_65_20_reg[0] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-6014] Unused sequential element vv_model_2_struct/cmult/rere/op_mem_65_20_reg[0] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+WARNING: [Synth 8-6014] Unused sequential element vv_model_2_struct/cmult/rere/op_mem_65_20_reg[0] was removed.  [/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ipshared/177b/hdl/vv_model_2_entity_declarations.v:2148]
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[0]' (FDE) to 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/ap_enable_reg_pp0_iter1_reg' (FDRE) to 'inst/vv_model_2_struct/vivado_hls1/ap_enable_reg_pp0_iter1_reg'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[0]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[1]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[2]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[3]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[4]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[5]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[6]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[7]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[8]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[9]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[10]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[11]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[12]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[13]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[14]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_im_V_read_reg_393_reg[15]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_im_V_read_reg_393_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[0]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[1]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[2]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[3]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[4]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[5]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[6]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[7]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[8]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[9]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[10]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[11]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[12]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[13]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[14]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/twidd_re_V_read_reg_398_reg[15]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/twidd_re_V_read_reg_398_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[1]' (FDE) to 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[2]' (FDE) to 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[3]' (FDE) to 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[4]' (FDE) to 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[5]' (FDE) to 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[6]' (FDE) to 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[7]' (FDE) to 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[8]' (FDE) to 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[9]' (FDE) to 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[10]' (FDE) to 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[11]' (FDE) to 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[12]' (FDE) to 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/din_im_V_read_reg_403_reg[13]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/rst_app_read_reg_389_reg[0]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/rst_app_read_reg_389_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/rst_app_read_reg_389_pp0_iter1_reg_reg[0]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/rst_app_read_reg_389_pp0_iter1_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/ap_enable_reg_pp0_iter2_reg' (FDRE) to 'inst/vv_model_2_struct/vivado_hls2/ap_enable_reg_pp0_iter2_reg'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[0]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[0]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[1]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[2]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[3]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[4]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[5]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[6]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[7]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[8]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[9]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[10]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[11]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[12]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[13]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[14]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_im_V_int_reg_reg[15]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_im_V_int_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[0]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[1]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[2]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[3]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[4]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[5]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[6]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[7]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[8]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[9]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[10]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[11]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[12]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[13]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[14]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/grp_modulation_fu_217/twidd_re_V_int_reg_reg[15]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/twidd_re_V_int_reg_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/rst_app_read_reg_389_pp0_iter2_reg_reg[0]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/rst_app_read_reg_389_pp0_iter2_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/ap_enable_reg_pp0_iter3_reg' (FDRE) to 'inst/vv_model_2_struct/vivado_hls2/ap_enable_reg_pp0_iter3_reg'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[1]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[2]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[3]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[4]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[5]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[6]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[7]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[8]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[9]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[10]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[11]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[12]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\vv_model_2_struct/vivado_hls1/din_im_V_read_reg_403_reg[13] )
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/rst_app_read_reg_389_pp0_iter3_reg_reg[0]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/rst_app_read_reg_389_pp0_iter3_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls1/ap_enable_reg_pp0_iter4_reg' (FDRE) to 'inst/vv_model_2_struct/vivado_hls2/ap_enable_reg_pp0_iter4_reg'
+INFO: [Synth 8-3886] merging instance 'inst/vv_model_2_struct/vivado_hls2/rst_app_read_reg_389_pp0_iter4_reg_reg[0]' (FDE) to 'inst/vv_model_2_struct/vivado_hls1/rst_app_read_reg_389_pp0_iter4_reg_reg[0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\vv_model_2_struct/vivado_hls1/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\vv_model_2_struct/power1/power_adder/op_mem_91_20_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\vv_model_2_struct/power/power_adder/op_mem_91_20_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\vv_model_2_struct/cmult/convert_im/conv_udp/no_latency_lt_t.reg_out/has_only_1.srlc33e_array0/reg_array[0].has_latency.u2 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\vv_model_2_struct/cmult/convert_re/conv_udp/no_latency_lt_t.reg_out/has_only_1.srlc33e_array0/reg_array[0].has_latency.u2 )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\vv_model_2_struct/vivado_hls1/grp_modulation_fu_217/ap_ce_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\vv_model_2_struct/power1/power_adder/op_mem_91_20_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\vv_model_2_struct/power/power_adder/op_mem_91_20_reg[1][0] )
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_default_clock_driver/clockdriver/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/addsub_im/prev_mode_93_22_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/addsub_im/prev_mode_93_22_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[1].set_comp.fdse_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/addsub_im/prev_mode_93_22_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[2].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/addsub_re/prev_mode_93_22_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/addsub_re/prev_mode_93_22_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[1].set_comp.fdse_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/addsub_re/prev_mode_93_22_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[2].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/convert_im/conv_udp/no_latency_lt_t.reg_out/has_only_1.srlc33e_array0/reg_array[0].has_latency.u2) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/convert_re/conv_udp/no_latency_lt_t.reg_out/has_only_1.srlc33e_array0/reg_array[0].has_latency.u2) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/pipeline2/register0/synth_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/pipeline2/register1/synth_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/pipeline2/register2/synth_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/pipeline3/register0/synth_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/pipeline3/register1/synth_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/pipeline3/register2/synth_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/pipeline4/register0/synth_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/pipeline4/register1/synth_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/pipeline4/register2/synth_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/pipeline5/register0/synth_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/pipeline5/register1/synth_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/pipeline5/register2/synth_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/power/power_adder/prev_mode_93_22_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/power/power_adder/prev_mode_93_22_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[1].set_comp.fdse_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/power/power_adder/prev_mode_93_22_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[2].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/power1/power_adder/prev_mode_93_22_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/power1/power_adder/prev_mode_93_22_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[1].set_comp.fdse_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/power1/power_adder/prev_mode_93_22_reg_inst/has_latency.fd_array[1].reg_comp_1/fd_prim_array[2].rst_comp.fdre_comp) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][47]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][46]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][45]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][44]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][43]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][42]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][41]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][40]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][39]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][38]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][37]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][36]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][35]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][34]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][33]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][32]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][31]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][30]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][29]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][28]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][27]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][26]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][25]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][24]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][23]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][22]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][21]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][20]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][19]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][18]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[1][17]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][47]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][46]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][45]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][44]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][43]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][42]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][41]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][40]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][39]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][38]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][37]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][36]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][35]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][34]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][33]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][32]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][31]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][30]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][29]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][28]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][27]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][26]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][25]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][24]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][23]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][22]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][21]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][20]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][19]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][18]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][17]) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][47]__0) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][46]__0) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][45]__0) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][44]__0) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][43]__0) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][42]__0) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][41]__0) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][40]__0) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][39]__0) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][38]__0) is unused and will be removed from module vv_model_2.
+WARNING: [Synth 8-3332] Sequential element (vv_model_2_struct/cmult/reim/op_mem_65_20_reg[2][37]__0) is unused and will be removed from module vv_model_2.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vv_model_2_mult_gen_v12_0_i0:/U0/i_mult/\gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_subtract_delay.subtract_delay/d1.dout_i_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 2009.332 ; gain = 386.121 ; free physical = 1955 ; free virtual = 5050
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_0/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_0/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_0/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_0/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_0/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_0/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_0/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_1/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_1/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_1/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_1/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_1/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_1/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_1/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_2/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_2/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_2/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_2/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_2/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_2/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_2/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_3/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_3/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_3/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_3/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_3/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_3/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_structi_3/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 2022.316 ; gain = 399.105 ; free physical = 1752 ; free virtual = 4860
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 2023.316 ; gain = 400.105 ; free physical = 1749 ; free virtual = 4858
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_1' (RAMB36E1) to 'inst/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0'
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_2' (RAMB36E1) to 'inst/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0'
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_3' (RAMB36E1) to 'inst/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0'
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_4' (RAMB36E1) to 'inst/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0'
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_5' (RAMB36E1) to 'inst/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0'
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_6' (RAMB36E1) to 'inst/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0'
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_1' (RAMB36E1) to 'inst/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0'
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_2' (RAMB36E1) to 'inst/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0'
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_3' (RAMB36E1) to 'inst/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0'
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_4' (RAMB36E1) to 'inst/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0'
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_5' (RAMB36E1) to 'inst/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0'
+INFO: [Synth 8-223] decloning instance 'inst/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_6' (RAMB36E1) to 'inst/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0'
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls1/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls1/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls2/delay_re_V_U/msdft_delay_re_V_ram_U/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/vv_model_2_struct/vivado_hls2/delay_im_V_U/msdft_delay_re_V_ram_U/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 2053.301 ; gain = 430.090 ; free physical = 1723 ; free virtual = 4832
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net \vv_model_2_struct/vivado_hls1/ap_enable_reg_pp0_iter1  is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2069.176 ; gain = 445.965 ; free physical = 1723 ; free virtual = 4832
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2069.176 ; gain = 445.965 ; free physical = 1725 ; free virtual = 4834
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2069.176 ; gain = 445.965 ; free physical = 1727 ; free virtual = 4836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2069.176 ; gain = 445.965 ; free physical = 1727 ; free virtual = 4836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2069.176 ; gain = 445.965 ; free physical = 1727 ; free virtual = 4836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2069.176 ; gain = 445.965 ; free physical = 1727 ; free virtual = 4836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   200|
+|2     |DSP48E1    |     4|
+|3     |DSP48E1_1  |     4|
+|4     |DSP48E1_10 |     4|
+|5     |DSP48E1_11 |     8|
+|6     |DSP48E1_12 |     2|
+|7     |DSP48E1_13 |     2|
+|8     |DSP48E1_14 |     2|
+|9     |DSP48E1_2  |     4|
+|10    |DSP48E1_3  |     4|
+|11    |DSP48E1_8  |     4|
+|12    |DSP48E1_9  |     2|
+|13    |LUT1       |    39|
+|14    |LUT2       |   620|
+|15    |LUT3       |     9|
+|16    |LUT4       |    34|
+|17    |LUT5       |    29|
+|18    |LUT6       |     5|
+|19    |RAMB36E1   |    16|
+|20    |SRL16E     |    93|
+|21    |SRLC32E    |    29|
+|22    |FDE        |   412|
+|23    |FDRE       |  2366|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2069.176 ; gain = 445.965 ; free physical = 1727 ; free virtual = 4836
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 457 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 2069.176 ; gain = 306.246 ; free physical = 1802 ; free virtual = 4911
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2069.184 ; gain = 445.965 ; free physical = 1802 ; free virtual = 4911
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 668 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2101.191 ; gain = 0.000 ; free physical = 1745 ; free virtual = 4849
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 412 instances were transformed.
+  FDE => FDRE: 412 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+404 Infos, 255 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 2101.191 ; gain = 679.227 ; free physical = 1902 ; free virtual = 5006
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2101.191 ; gain = 0.000 ; free physical = 1902 ; free virtual = 5006
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.runs/system_vv_model_2_0_0_synth_1/system_vv_model_2_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_vv_model_2_0_0, cache-ID = f02a9339f0e9569a
+INFO: [Coretcl 2-1174] Renamed 226 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2125.203 ; gain = 0.000 ; free physical = 1899 ; free virtual = 5009
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.runs/system_vv_model_2_0_0_synth_1/system_vv_model_2_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_vv_model_2_0_0_utilization_synth.rpt -pb system_vv_model_2_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 22 18:53:20 2020...

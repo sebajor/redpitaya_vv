@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER msdft_control
+	OPTION supported_peripherals = (msdft_control);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = msdft_control;
+END DRIVER

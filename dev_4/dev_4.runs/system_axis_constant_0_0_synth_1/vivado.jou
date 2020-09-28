@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:04:45 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Sun Jul 12 19:20:36 2020
+# Process ID: 9653
+# Current directory: /home/seba/Workspace/projects/rp_vv/project/project.runs/system_axis_constant_0_0_synth_1
+# Command line: vivado -log system_axis_constant_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axis_constant_0_0.tcl
+# Log file: /home/seba/Workspace/projects/rp_vv/project/project.runs/system_axis_constant_0_0_synth_1/system_axis_constant_0_0.vds
+# Journal file: /home/seba/Workspace/projects/rp_vv/project/project.runs/system_axis_constant_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_axis_constant_0_0.tcl -notrace
