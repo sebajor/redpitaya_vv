@@ -132,12 +132,12 @@ preplace netloc axi_bram_ctrl_3_bram_en_a 1 5 1 1690 1480n
 preplace netloc axi_bram_ctrl_3_bram_rst_a 1 5 1 1700 1500n
 preplace netloc bram_reader_0_dout_tdata 1 4 3 1050J 470 NJ 470 2040
 preplace netloc bram_reader_0_dout_tvalid 1 4 3 1040J 480 NJ 480 2020
-preplace netloc ps7_0_axi_periph_M02_AXI 1 1 2 -240 40 N
-preplace netloc processing_system7_0_M_AXI_GP0 1 0 2 -770 -100 -280
-preplace netloc ps7_0_axi_periph_M04_AXI 1 1 4 -230J -70 NJ -70 NJ -70 1080
 preplace netloc ps7_0_axi_periph_M01_AXI 1 1 1 -220 80n
 preplace netloc ps7_0_axi_periph_M03_AXI 1 1 9 -250J -80 NJ -80 NJ -80 NJ -80 NJ -80 N -80 N -80 N -80 3050
+preplace netloc processing_system7_0_M_AXI_GP0 1 0 2 -770 -100 -280
+preplace netloc ps7_0_axi_periph_M04_AXI 1 1 4 -230J -70 NJ -70 NJ -70 1080
 preplace netloc processing_system7_0_DDR 1 1 11 N 1090 N 1090 NJ 1090 N 1090 N 1090 N 1090 N 1090 N 1090 3080 1110 3510 1080 N
+preplace netloc ps7_0_axi_periph_M02_AXI 1 1 2 -240 40 N
 preplace netloc processing_system7_0_FIXED_IO 1 1 11 -260 1140 N 1140 NJ 1140 N 1140 N 1140 N 1140 N 1140 N 1140 N 1140 N 1140 N
 preplace netloc ps7_0_axi_periph_M00_AXI 1 1 9 -270 -90 N -90 NJ -90 N -90 NJ -90 N -90 N -90 N -90 3090
 levelinfo -pg 1 -840 -510 60 420 830 1490 1880 2280 2670 2920 3300 3690 3840

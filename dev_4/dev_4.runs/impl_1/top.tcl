@@ -68,7 +68,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 2
   open_checkpoint top_routed.dcp
-  set_property webtalk.parent_dir /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.cache/wt [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force top.mmi }
   write_bitstream -force top.bit 

@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.runs/impl_1'
+HD_PWD='/home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

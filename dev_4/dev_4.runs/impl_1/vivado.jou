@@ -2,11 +2,11 @@
 # Vivado v2019.1.1 (64-bit)
 # SW Build 2580384 on Sat Jun 29 08:04:45 MDT 2019
 # IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
-# Start of session at: Wed Sep 23 14:16:32 2020
-# Process ID: 32673
-# Current directory: /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.runs/impl_1
+# Start of session at: Mon Sep 28 13:57:08 2020
+# Process ID: 8050
+# Current directory: /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.runs/impl_1
 # Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
-# Log file: /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.runs/impl_1/top.vdi
-# Journal file: /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.runs/impl_1/vivado.jou
+# Log file: /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.runs/impl_1/top.vdi
+# Journal file: /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace

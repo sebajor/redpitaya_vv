@@ -1,8 +1,8 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.1 (lin64) Build 2580384 Sat Jun 29 08:04:45 MDT 2019
--- Date        : Wed Sep 23 00:11:08 2020
--- Host        : seba-HP-ProBook-450-G6 running 64-bit Ubuntu 18.04.5 LTS
+-- Date        : Mon Aug 24 22:52:27 2020
+-- Host        : seba-HP-ProBook-450-G6 running 64-bit Ubuntu 18.04.4 LTS
 -- Command     : write_vhdl -force -mode synth_stub -rename_top system_auto_pc_0 -prefix
 --               system_auto_pc_0_ system_auto_pc_0_stub.vhdl
 -- Design      : system_auto_pc_0

@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1.1 (lin64) Build 2580384 Sat Jun 29 08:04:45 MDT 2019
-// Date        : Wed Sep 23 00:12:07 2020
-// Host        : seba-HP-ProBook-450-G6 running 64-bit Ubuntu 18.04.5 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_1/system_axi_bram_ctrl_0_1_stub.v
+// Date        : Mon Aug 24 22:51:07 2020
+// Host        : seba-HP-ProBook-450-G6 running 64-bit Ubuntu 18.04.4 LTS
+// Command     : write_verilog -force -mode synth_stub -rename_top system_axi_bram_ctrl_0_1 -prefix
+//               system_axi_bram_ctrl_0_1_ system_axi_bram_ctrl_0_1_stub.v
 // Design      : system_axi_bram_ctrl_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

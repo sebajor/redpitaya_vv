@@ -4,10 +4,12 @@ import numpy as np
 from scipy.fftpack import fft
 
 f = file('in_data', 'rb')
+dat_len = 8192
 
-raw_data = f.read(4*512)
+
+raw_data = f.read(4*8192)
 #dat = struct.unpack('2048H', raw_data) #uint adc
-dat = struct.unpack('1024h', raw_data)
+dat = struct.unpack(str(dat_len*2)+'h', raw_data)
 
 dat1 = dat[::2]
 dat2 = dat[1::2]

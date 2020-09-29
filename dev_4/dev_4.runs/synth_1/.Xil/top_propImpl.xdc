@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/constrs_1/imports/cfg/clocks.xdc rfile:../../../dev_4.srcs/constrs_1/imports/cfg/clocks.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/constrs_1/imports/cfg/ports.xdc rfile:../../../dev_4.srcs/constrs_1/imports/cfg/ports.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/constrs_1/imports/cfg/clocks.xdc rfile:../../../dev_4.srcs/constrs_1/imports/cfg/clocks.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/constrs_1/imports/cfg/ports.xdc rfile:../../../dev_4.srcs/constrs_1/imports/cfg/ports.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
 set_false_path -from [get_clocks clk_fpga_0] -to [get_clocks adc_clk]
 set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]

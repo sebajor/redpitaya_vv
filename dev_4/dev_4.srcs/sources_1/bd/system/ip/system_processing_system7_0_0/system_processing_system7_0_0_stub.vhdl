@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1.1 (lin64) Build 2580384 Sat Jun 29 08:04:45 MDT 2019
--- Date        : Wed Sep 23 00:08:43 2020
+-- Date        : Wed Sep 23 00:02:14 2020
 -- Host        : seba-HP-ProBook-450-G6 running 64-bit Ubuntu 18.04.5 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top system_processing_system7_0_0 -prefix
+--               system_processing_system7_0_0_ system_processing_system7_0_0_stub.vhdl
 -- Design      : system_processing_system7_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

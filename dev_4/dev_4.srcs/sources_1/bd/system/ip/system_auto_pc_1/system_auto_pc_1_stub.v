@@ -1,8 +1,8 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1.1 (lin64) Build 2580384 Sat Jun 29 08:04:45 MDT 2019
-// Date        : Wed Sep 23 00:13:12 2020
-// Host        : seba-HP-ProBook-450-G6 running 64-bit Ubuntu 18.04.5 LTS
+// Date        : Sun Jul 12 19:26:38 2020
+// Host        : seba-HP-ProBook-450-G6 running 64-bit Ubuntu 18.04.4 LTS
 // Command     : write_verilog -force -mode synth_stub -rename_top system_auto_pc_1 -prefix
 //               system_auto_pc_1_ system_auto_pc_1_stub.v
 // Design      : system_auto_pc_1

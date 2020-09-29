@@ -25,43 +25,49 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.cache/wt [current_project]
-set_property parent.project_path /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.xpr [current_project]
+set_property webtalk.parent_dir /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.cache/wt [current_project]
+set_property parent.project_path /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_repo_paths {
-  /home/seba/Workspace/projects/rp_vv/ip_repo/msdft_control_1.0
-  /home/seba/Workspace/projects/rp_vv/ip_repo/msdft_control_1.0
-  /home/seba/Workspace/projects/rp_vv/ip_repo/myip_1.0
+  /home/seba/Workspace/projects/redpitaya_vv/ip_repo/msdft_control_1.0
+  /home/seba/Workspace/projects/redpitaya_vv/ip_repo/msdft_control_1.0
+  /home/seba/Workspace/projects/redpitaya_vv/ip_repo/myip_1.0
   /home/seba/Workspace/vivado/models/redpitaya_guide/tmp/cores
   /home/seba/Workspace/projects/rp_vv
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.cache/ip [current_project]
+set_property ip_output_repo /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 set_property verilog_define TOOL_VIVADO [current_fileset]
-read_verilog -library xil_defaultlib /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/new/top.v
-add_files /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/system.bd
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/system_util_ds_buf_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/system_util_ds_buf_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_util_ds_buf_2_0/system_util_ds_buf_2_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_util_ds_buf_2_0/system_util_ds_buf_2_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_dds_compiler_0_0/system_dds_compiler_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_blk_mem_gen_1_0/system_blk_mem_gen_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_blk_mem_gen_0_2/system_blk_mem_gen_0_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_blk_mem_gen_0_3/system_blk_mem_gen_0_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_vv_model_2_0_0/constrs/vv_model_2.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_blk_mem_gen_2_0/system_blk_mem_gen_2_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/system/system_ooc.xdc]
+read_verilog -library xil_defaultlib /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/new/top.v
+add_files /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/system.bd
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/system_util_ds_buf_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_util_ds_buf_1_0/system_util_ds_buf_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_util_ds_buf_2_0/system_util_ds_buf_2_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_util_ds_buf_2_0/system_util_ds_buf_2_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_dds_compiler_0_0/system_dds_compiler_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_rst_ps7_0_125M_0/system_rst_ps7_0_125M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_1/system_axi_bram_ctrl_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_blk_mem_gen_1_0/system_blk_mem_gen_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_blk_mem_gen_0_2/system_blk_mem_gen_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_3/system_axi_bram_ctrl_0_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_blk_mem_gen_0_3/system_blk_mem_gen_0_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_0_4/system_axi_bram_ctrl_0_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_vv_model_2_0_0/constrs/vv_model_2.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_axi_bram_ctrl_2_0/system_axi_bram_ctrl_2_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_blk_mem_gen_2_0/system_blk_mem_gen_2_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/system_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -71,11 +77,11 @@ set_property used_in_implementation false [get_files -all /home/seba/Workspace/p
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/constrs_1/imports/cfg/clocks.xdc
-set_property used_in_implementation false [get_files /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/constrs_1/imports/cfg/clocks.xdc]
+read_xdc /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/constrs_1/imports/cfg/clocks.xdc
+set_property used_in_implementation false [get_files /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/constrs_1/imports/cfg/clocks.xdc]
 
-read_xdc /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/constrs_1/imports/cfg/ports.xdc
-set_property used_in_implementation false [get_files /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/constrs_1/imports/cfg/ports.xdc]
+read_xdc /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/constrs_1/imports/cfg/ports.xdc
+set_property used_in_implementation false [get_files /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/constrs_1/imports/cfg/ports.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

@@ -1,0 +1,361 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.1 (64-bit)
+# SW Build 2580384 on Sat Jun 29 08:04:45 MDT 2019
+# IP Build 2579722 on Sat Jun 29 11:35:40 MDT 2019
+# Start of session at: Mon Sep 28 13:19:15 2020
+# Process ID: 13168
+# Current directory: /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.runs/system_bram_intf_0_1_synth_1
+# Command line: vivado -log system_bram_intf_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_bram_intf_0_1.tcl
+# Log file: /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.runs/system_bram_intf_0_1_synth_1/system_bram_intf_0_1.vds
+# Journal file: /home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.runs/system_bram_intf_0_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_bram_intf_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/seba/Workspace/projects/redpitaya_vv/ip_repo/msdft_control_1.0'.
+WARNING: [IP_Flow 19-2207] Repository '/home/seba/Workspace/projects/redpitaya_vv/ip_repo/msdft_control_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/seba/Workspace/projects/redpitaya_vv/ip_repo/msdft_control_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/seba/Workspace/projects/redpitaya_vv/ip_repo/myip_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/seba/Workspace/vivado/models/redpitaya_guide/tmp/cores'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/seba/Workspace/projects/rp_vv'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:msdft_control:1.0'. The one found in IP location '/home/seba/Workspace/projects/redpitaya_vv/ip_repo/msdft_control_1.0' will take precedence over the same IP in location /home/seba/Workspace/projects/rp_vv/ip_repo/msdft_control_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:myip:1.0'. The one found in IP location '/home/seba/Workspace/projects/redpitaya_vv/ip_repo/myip_1.0' will take precedence over the same IP in location /home/seba/Workspace/projects/rp_vv/ip_repo/myip_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:module_ref:bram_intf:1.0'. The one found in IP location '/home/seba/Workspace/projects/rp_vv/sim_dds/sim_dds.srcs/sources_1/bd/mref/bram_intf' will take precedence over the same IP in locations: 
+   /home/seba/Workspace/projects/rp_vv/dev/dev.srcs/sources_1/bd/mref/bram_intf
+   /home/seba/Workspace/projects/rp_vv/dev2/dev2.srcs/sources_1/bd/mref/bram_intf
+   /home/seba/Workspace/projects/rp_vv/test/test.srcs/sources_1/bd/mref/bram_intf
+   /home/seba/Workspace/projects/rp_vv/dev_3_ext_ckl/dev_3_ext_ckl.srcs/sources_1/bd/mref/bram_intf
+   /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/mref/bram_intf
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:module_ref:bram_reader:1.0'. The one found in IP location '/home/seba/Workspace/projects/rp_vv/sim_dds/sim_dds.srcs/sources_1/bd/mref/bram_reader' will take precedence over the same IP in locations: 
+   /home/seba/Workspace/projects/rp_vv/dev/dev.srcs/sources_1/bd/mref/bram_reader
+   /home/seba/Workspace/projects/rp_vv/dev2/dev2.srcs/sources_1/bd/mref/bram_reader
+   /home/seba/Workspace/projects/rp_vv/test/test.srcs/sources_1/bd/mref/bram_reader
+   /home/seba/Workspace/projects/rp_vv/dev_3_ext_ckl/dev_3_ext_ckl.srcs/sources_1/bd/mref/bram_reader
+   /home/seba/Workspace/projects/rp_vv/dev_4/dev_4.srcs/sources_1/bd/mref/bram_reader
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:module_ref:logic_extended:1.0'. The one found in IP location '/home/seba/Workspace/projects/rp_vv/project/project.srcs/sources_1/bd/mref/logic_extended' will take precedence over the same IP in location /home/seba/Workspace/projects/rp_vv/dev/dev.srcs/sources_1/bd/mref/logic_extended
+Command: synth_design -top system_bram_intf_0_1 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'system_bram_intf_0_1' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13365 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1776.598 ; gain = 154.684 ; free physical = 131 ; free virtual = 3676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_bram_intf_0_1' [/home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_bram_intf_0_1/synth/system_bram_intf_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'bram_intf' [/home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/imports/bram_intf/bram_intf.v:2]
+	Parameter word_addr bound to: 1024 - type: integer 
+	Parameter word_size bound to: 128 - type: integer 
+	Parameter freeze bound to: 1 - type: integer 
+	Parameter aux bound to: 4 - type: integer 
+	Parameter aux2 bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bram_intf' (1#1) [/home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/imports/bram_intf/bram_intf.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'system_bram_intf_0_1' (2#1) [/home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.srcs/sources_1/bd/system/ip/system_bram_intf_0_1/synth/system_bram_intf_0_1.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1834.316 ; gain = 212.402 ; free physical = 206 ; free virtual = 3660
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1840.254 ; gain = 218.340 ; free physical = 185 ; free virtual = 3639
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1840.254 ; gain = 218.340 ; free physical = 184 ; free virtual = 3639
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.004 ; gain = 0.000 ; free physical = 150 ; free virtual = 3622
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2007.004 ; gain = 0.000 ; free physical = 151 ; free virtual = 3623
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 224 ; free virtual = 3684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 224 ; free virtual = 3684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 223 ; free virtual = 3684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 210 ; free virtual = 3671
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module bram_intf 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port tge_tready driven by constant 1
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[31] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[30] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[29] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[28] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[27] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[26] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[25] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[24] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[23] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[22] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[21] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[20] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[19] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[18] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[17] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[16] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[15] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[14] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[3] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[2] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[1] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port addr[0] driven by constant 0
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port en driven by constant 1
+INFO: [Synth 8-3917] design system_bram_intf_0_1 has port rst driven by constant 0
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[0]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[1]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[2]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[3]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[4]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[5]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[6]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[7]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[8]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[9]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[10]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[11]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[12]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[13]' (FDR) to 'inst/we_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/we_r_reg[14]' (FDR) to 'inst/we_r_reg[15]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 190 ; free virtual = 3655
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 126 ; free virtual = 3366
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 125 ; free virtual = 3365
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 131 ; free virtual = 3361
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 122 ; free virtual = 3323
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 122 ; free virtual = 3323
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 122 ; free virtual = 3322
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 122 ; free virtual = 3322
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 121 ; free virtual = 3322
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 121 ; free virtual = 3322
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     2|
+|2     |LUT3 |     3|
+|3     |LUT4 |     4|
+|4     |LUT5 |     3|
+|5     |LUT6 |     4|
+|6     |FDRE |   152|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |   168|
+|2     |  inst   |bram_intf |   168|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 121 ; free virtual = 3322
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2007.004 ; gain = 218.340 ; free physical = 176 ; free virtual = 3377
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2007.004 ; gain = 385.090 ; free physical = 176 ; free virtual = 3377
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.004 ; gain = 0.000 ; free physical = 118 ; free virtual = 3302
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2007.004 ; gain = 585.461 ; free physical = 214 ; free virtual = 3399
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.004 ; gain = 0.000 ; free physical = 214 ; free virtual = 3399
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.runs/system_bram_intf_0_1_synth_1/system_bram_intf_0_1.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2031.016 ; gain = 0.000 ; free physical = 195 ; free virtual = 3383
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/seba/Workspace/projects/redpitaya_vv/dev_4/dev_4.runs/system_bram_intf_0_1_synth_1/system_bram_intf_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_bram_intf_0_1_utilization_synth.rpt -pb system_bram_intf_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 13:20:10 2020...
